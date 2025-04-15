@@ -1,0 +1,121 @@
+nav {
+    display: flex;
+    align-items: center;
+    background-color: #d2e7f0;
+    padding: 10px 20px;
+    gap: 20px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: #547d96;
+    font-weight: 500;
+    padding-bottom: 4px;
+    transition: color 0.3s ease;
+  }
+  
+  nav a:hover {
+    color: #3b6c85;
+  }
+  
+  .active-link {
+    color: #2f5e74;
+    border-bottom: 2px solid #2f5e74;
+  }
+  
+  nav button {
+    margin-left: auto;
+    background-color: #8ab0c8;
+    color: white;
+    border: none;
+    padding: 6px 14px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: background 0.3s ease;
+  }
+  
+  nav button:hover {
+    background-color: #6b98af;
+  }
+  
+
+  nav {
+    display: flex;
+    align-items: center;
+    background-color: #d2e7f0;
+    padding: 10px 20px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  
+  .nav-links {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: #547d96;
+    font-weight: 500;
+    padding-bottom: 4px;
+    transition: color 0.3s ease;
+  }
+  
+  nav a:hover {
+    color: #3b6c85;
+  }
+  
+  .active-link {
+    color: #2f5e74;
+    border-bottom: 2px solid #2f5e74;
+  }
+  
+  nav button.logout-btn {
+    background-color: #8ab0c8;
+    color: white;
+    border: none;
+    padding: 6px 14px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: background 0.3s ease;
+    margin-left: auto;
+  }
+  
+  nav button.logout-btn:hover {
+    background-color: #6b98af;
+  }
+  
+  .burger {
+    display: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    background: none;
+    border: none;
+  }
+  
+  @media (max-width: 768px) {
+    .nav-links {
+      flex-direction: column;
+      width: 100%;
+      display: none;
+      margin-top: 10px;
+    }
+  
+    .nav-links.open {
+      display: flex;
+    }
+  
+    .burger {
+      display: block;
+      margin-left: auto;
+    }
+  
+    nav button.logout-btn {
+      margin: 10px 0 0 0;
+    }
+  }
+  

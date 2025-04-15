@@ -1,0 +1,83 @@
+/* Центрируем контейнер и контент */
+.stats-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* по вертикали */
+  align-items: center;     /* по горизонтали */
+  min-height: 100vh;
+  padding: 40px 20px;
+  background-color: #E8ECEC;
+  text-align: center;
+}
+
+/* Таблица */
+.stats-table {
+  width: 100%;
+  max-width: 900px;
+  border-collapse: collapse;
+  margin-top: 20px;
+  background: white;
+  box-shadow: 0 0 10px rgba(0,0,0,0.05);
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+/* Заголовки и ячейки */
+.stats-table th,
+.stats-table td {
+  padding: 14px 20px;
+  border-bottom: 1px solid #eee;
+}
+
+.stats-table th {
+  background-color: #cadde4;
+  color: #333;
+  font-weight: bold;
+}
+
+/* Кнопка */
+.stats-table button {
+  padding: 8px 16px;
+  background-color: #88ACBC;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background 0.3s ease;
+}
+
+.stats-table button:hover {
+  background-color: #6b98af;
+}
+
+.user-card {
+  border-top: 4px solid #cadde4;
+}
+
+/* Адаптивность таблицы на мобилках */
+.stats-table-wrapper {
+  width: 100%;
+  overflow-x: auto;
+}
+
+/* Обязательно: скрываем горизонтальный скролл на десктопе */
+@media (min-width: 768px) {
+  .stats-table-wrapper {
+    overflow-x: unset;
+  }
+}
+
+
+.preview-btn {
+  background-color: #60a5fa;
+  color: white;
+  padding: 6px 12px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-left: 8px;
+}
+.preview-btn:hover {
+  background-color: #3b82f6;
+}

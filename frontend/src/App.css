@@ -1,0 +1,708 @@
+/* === БАЗОВАЯ ПАСТЕЛЬНАЯ ТЕМА В СТИЛЕ AQUA HUSH === */
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #E8ECEC;
+    margin: 0;
+    padding: 0;
+    color: #333;
+  }
+  
+  nav {
+    background-color: #A6C4D0;
+    padding: 12px 20px;
+    display: flex;
+    gap: 16px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: #88ACBC;
+    font-weight: 600;
+  }
+  
+  h2 {
+    color: #88ACBC;
+    margin-bottom: 20px;
+  }
+  
+  .container {
+    padding: 30px;
+    max-width: 900px;
+    margin: 0 auto;
+  }
+  
+  input[type="text"],
+  input[type="password"],
+  input[type="file"] {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    margin-right: 10px;
+    background-color: #CADDE4;
+  }
+  
+  button {
+    background-color: #88ACBC;
+    color: white;
+    border: none;
+    padding: 10px 16px;
+    border-radius: 12px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s;
+  }
+  
+  button:hover {
+    background-color: #6e91a1;
+  }
+  
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  li {
+    background: #ffffff;
+    padding: 20px;
+    margin-bottom: 16px;
+    border: 1px solid #ddd;
+    border-radius: 16px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.03);
+  }
+  
+  li strong {
+    color: #88ACBC;
+    font-size: 18px;
+  }
+  
+  label {
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    color: #666;
+  }
+  
+  @media (max-width: 768px) {
+    .container {
+      padding: 16px;
+    }
+  
+    nav {
+      flex-direction: column;
+      gap: 10px;
+    }
+  
+    input[type="text"],
+    input[type="password"],
+    input[type="file"] {
+      width: 100%;
+      margin-bottom: 12px;
+    }
+  
+    button {
+      width: 100%;
+      margin-bottom: 12px;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .file-actions {
+      flex-direction: column;
+    }
+  
+    li button,
+    li input[type="text"] {
+      width: 100%;
+    }
+  }
+  
+  
+
+  /* Главная страница: приветствие */
+.welcome-container {
+    background-color: #FFFFFF;
+    border-radius: 20px;
+    padding: 40px;
+    margin: 40px auto;
+    max-width: 800px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  }
+  
+  .welcome-container h1 {
+    font-size: 36px;
+    color: #88ACBC;
+    margin-bottom: 16px;
+  }
+  
+  .welcome-container p {
+    font-size: 18px;
+    color: #444;
+    margin-bottom: 24px;
+  }
+  
+  .welcome-container a {
+    color: #6e91a1;
+    font-weight: 600;
+    text-decoration: underline;
+    margin: 0 10px;
+  }
+  
+  /* Улучшение хедера */
+  nav {
+    background-color: #CADDE4;
+    padding: 16px 24px;
+    display: flex;
+    gap: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    border-radius: 0 0 20px 20px;
+  }
+  
+
+  .auth-wrapper {
+    max-width: 400px;
+    margin: 80px auto;
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.06);
+    text-align: center;
+  }
+  
+  .auth-wrapper h2 {
+    color: #88ACBC;
+    font-size: 26px;
+    margin-bottom: 20px;
+  }
+  
+  .auth-wrapper label {
+    display: block;
+    margin: 12px 0 6px;
+    color: #666;
+    text-align: left;
+    font-size: 14px;
+  }
+  
+  .auth-wrapper input[type="text"],
+  .auth-wrapper input[type="password"],
+  .auth-wrapper input[type="email"] {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    background-color: #CADDE4;
+    font-size: 16px;
+    box-sizing: border-box;
+  }
+  
+  .auth-wrapper button {
+    margin-top: 20px;
+    background-color: #88ACBC;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 12px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .auth-wrapper button:hover {
+    background-color: #6e91a1;
+  }
+
+
+/* Форма загрузки */
+.upload-form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-bottom: 30px;
+    align-items: center;
+  }
+  
+  /* Карточка файла */
+  li {
+    background: #ffffff;
+    padding: 24px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 16px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+  }
+  
+  li strong {
+    color: #88ACBC;
+    font-size: 20px;
+  }
+  
+  .file-info {
+    margin: 12px 0;
+    color: #555;
+    line-height: 1.5;
+  }
+  
+  .file-actions {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 10px;
+  }
+  
+  /* Текстовые инпуты под кнопками */
+  .file-actions input[type="text"] {
+    padding: 8px 12px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    background-color: #CADDE4;
+  }
+
+
+  input[type="file"] {
+    background-color: #CADDE4;
+    padding: 10px;
+    border-radius: 12px;
+    border: none;
+    color: #333;
+    cursor: pointer;
+  }
+
+
+  li {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+  
+  li button,
+  li input[type="text"] {
+    max-width: 300px;
+  }
+  
+  form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+
+  
+  .welcome-actions {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+  }
+  
+  .welcome-actions a {
+    color: #88ACBC;
+    font-weight: 600;
+    text-decoration: underline;
+  }
+  
+  .welcome-actions button {
+    background-color: #88ACBC;
+    color: white;
+    border: none;
+    padding: 10px 16px;
+    border-radius: 12px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s;
+  }
+  
+  .welcome-actions button:hover {
+    background-color: #6e91a1;
+  }
+
+  
+  /* Выравнивание формы загрузки */
+.upload-form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    align-items: center;
+    margin-bottom: 32px;
+  }
+  
+  /* Красивый input[type=file] */
+  input[type="file"] {
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 12px;
+    background-color: #CADDE4;
+    cursor: pointer;
+    font-size: 14px;
+  }
+  
+  /* Кнопки внутри файлов */
+  li button {
+    margin: 6px 8px 6px 0;
+  }
+  
+  li input[type="text"] {
+    margin: 6px 8px 6px 0;
+  }
+  
+  /* Блок файла: адаптив */
+  @media (max-width: 768px) {
+    .upload-form {
+      flex-direction: column;
+      align-items: stretch;
+    }
+  
+    li button, li input[type="text"] {
+      width: 100%;
+    }
+  }
+  
+
+  .active-link {
+    font-weight: bold;
+    color: #4b7c8c;
+    border-bottom: 2px solid #4b7c8c;
+  }
+ 
+  
+  .user-card button {
+    width: 100%;
+    margin-top: 10px;
+  }
+  .user-card h3,
+  .user-card p {
+    text-align: center;
+  }
+  
+
+  .admin-panel {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    margin: 40px auto;
+    max-width: 800px;
+    padding: 0 1rem;
+  }
+  
+  .user-card {
+    width: 100%;
+    background: white;
+    border-radius: 1.5rem;
+    padding: 20px;
+    box-shadow: 0 0 12px rgba(0,0,0,0.05);
+    text-align: center;
+  }
+  
+  .user-card h3 {
+    margin-bottom: 10px;
+    color: #3a3a3a;
+  }
+  
+  .admin-badge {
+    color: green;
+    margin-left: 10px;
+  }
+  
+  .user-card p {
+    margin-bottom: 20px;
+    font-size: 15px;
+    color: #444;
+  }
+  
+  .user-card button {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    font-weight: 600;
+    background-color: #8ab0c8;
+    color: white;
+    cursor: pointer;
+  }
+  
+  .user-card button:hover {
+    background-color: #6b98af;
+  }
+
+  .download-btn {
+  display: inline-block;
+  margin-top: 10px;
+  background-color: #8ab0c8;
+  color: #fff;
+  padding: 8px 16px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: background-color 0.3s ease;
+}
+
+.download-btn:hover {
+  background-color: #6b98af;
+}
+
+.file-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  
+  .file-edit {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  
+  .copy-btn {
+    background-color: #cadde4;
+    color: #333;
+    border-radius: 10px;
+    padding: 8px 14px;
+    font-weight: 600;
+    cursor: pointer;
+    border: none;
+  }
+  
+  .copy-btn:hover {
+    background-color: #a6c4d0;
+  }
+  
+
+  .file-actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    margin-top: 20px;
+  }
+  
+  .file-buttons {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+  
+  .file-edit {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: flex-end;
+    max-width: 300px;
+    margin-left: auto;
+  }
+  
+  .file-edit input[type="text"],
+  .file-edit button {
+    width: 100%;
+  }
+  
+  .copy-btn {
+    background-color: #cadde4;
+    color: #333;
+    border-radius: 10px;
+    padding: 8px 14px;
+    font-weight: 600;
+    cursor: pointer;
+    border: none;
+    margin-left: 10px;
+  }
+  
+  .copy-btn:hover {
+    background-color: #a6c4d0;
+  }
+  
+
+  .file-actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-top: 20px;
+  }
+  
+  .file-buttons {
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+    flex-wrap: wrap;
+  }
+  
+  .file-edit {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: flex-start;
+    width: 100%;
+    max-width: 280px;
+    margin-left: auto;
+  }
+  
+  .file-edit input[type="text"],
+  .file-edit button {
+    width: 95%;
+  }
+  
+  .copy-link-block {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-top: 8px;
+  }
+  
+  .copy-btn {
+    background-color: #cadde4;
+    color: #333;
+    border-radius: 10px;
+    padding: 8px 14px;
+    font-weight: 600;
+    cursor: pointer;
+    border: none;
+    transition: background-color 0.3s ease;
+  }
+  
+  .copy-btn:hover {
+    background-color: #a6c4d0;
+  }
+
+  /* Ограничим ширину карточки файла */
+ul > li {
+    max-width: 700px;
+    margin: 0 auto 24px auto;
+    padding: 24px 32px;
+  }
+  
+  /* Выравнивание блока с действиями */
+  .file-actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-top: 20px;
+    padding-right: 10px;
+  }
+  
+  /* Левая часть — кнопки */
+  .file-buttons {
+    display: flex;
+    gap: 12px;
+  }
+  
+  /* Правая часть — поля и кнопки */
+  .file-edit {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: flex-start;
+    max-width: 280px;
+    flex: 1;
+  }
+  
+  /* Кнопка копирования */
+  .copy-link-block {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-top: 12px;
+  }
+  
+  .form-line {
+    display: flex;
+    gap: 8px;
+    width: 100%;
+    max-width: 300px;
+  }
+  
+  .form-line input,
+  .form-line button {
+    flex: 1;
+    height: 40px;
+    border-radius: 10px;
+    font-size: 14px;
+    box-sizing: border-box;
+  }
+  
+  .form-line input {
+    padding: 8px 12px;
+    border: 1px solid #ccc;
+    background-color: #CADDE4;
+  }
+  
+  .form-line button {
+    background-color: #88ACBC;
+    color: white;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .form-line button:hover {
+    background-color: #6e91a1;
+  }
+  
+
+  .form-line {
+    display: flex;
+    gap: 10px;
+    width: 100%;
+    max-width: 600px; /* можно изменить при желании */
+  }
+  
+  .form-line input,
+  .form-line button {
+    flex: 1;
+    height: 42px;
+    border-radius: 10px;
+    font-size: 14px;
+    box-sizing: border-box;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  
+  .form-line input {
+    padding: 10px 12px;
+    border: 1px solid #ccc;
+    background-color: #CADDE4;
+  }
+  
+  .form-line button {
+    background-color: #88ACBC;
+    color: white;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .form-line button:hover {
+    background-color: #6e91a1;
+  }
+  
+
+  @media (max-width: 500px) {
+    .form-line {
+      flex-direction: column;
+      gap: 8px;
+    }
+  }
+  
+
+
+  
+
+  .upload-form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    justify-content: center; /* центр по горизонтали */
+    align-items: center;
+    margin-bottom: 32px;
+  }
+  
