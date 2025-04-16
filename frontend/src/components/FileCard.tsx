@@ -1,5 +1,6 @@
 import React from "react";
 import { deleteFile, downloadFile } from "../api/files";
+import { toast } from "react-toastify";
 
 type FileProps = {
   file: {
@@ -48,10 +49,27 @@ const FileCard: React.FC<FileProps> = ({ file }) => {
     }
   };
 
-  const copyToClipboard = (text: string) => {
-    navigator.clipboard.writeText(text);
-    alert("Ссылка скопирована в буфер обмена");
-  };
+
+const copyToClipboard = (text: string) => {
+  try {
+    const textarea = document.createElement("textarea");
+    textarea.value = text;
+    textarea.style.position = "fixed";
+    textarea.style.top = "0";
+    textarea.style.left = "0";
+    textarea.style.opacity = "0";
+    document.body.appendChild(textarea);
+    textarea.focus();
+    textarea.select();
+    document.execCommand("copy");
+    document.body.removeChild(textarea);
+    toast.success("Ссылка скопирована в буфер обмена");
+  } catch (err) {
+    console.error("Ошибка копирования:", err);
+    toast.error("Не удалось скопировать ссылку");
+  }
+};
+
 
   const handleDelete = async (id: string) => {
     if (window.confirm("Удалить файл?")) {

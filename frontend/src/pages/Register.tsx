@@ -14,11 +14,29 @@ const Register = () => {
     return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
   };
 
+  const isValidUsername = (username: string): boolean => {
+    return /^[A-Za-z][A-Za-z0-9_]{3,19}$/.test(username);
+  };
+
+  const isValidPassword = (password: string): boolean => {
+    return /^(?=.*[A-Z])(?=.*\d)(?=.*[\W_]).{6,}$/.test(password);
+  };
+
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
 
+    if (!isValidUsername(username)) {
+      toast.warning("Логин: латиница, 4–20 символов, первая — буква");
+      return;
+    }
+
     if (!isValidEmail(email)) {
       toast.warning("Введите корректный email (например, user@example.com)");
+      return;
+    }
+
+    if (!isValidPassword(password)) {
+      toast.warning("Пароль: минимум 6 символов, заглавная, цифра и спецсимвол");
       return;
     }
 
