@@ -1,0 +1,20 @@
+[2025-04-16 18:02:53 +0300] [25292] [INFO] Starting gunicorn 23.0.0
+[2025-04-16 18:02:53 +0300] [25292] [INFO] Listening at: http://0.0.0.0:8000 (25292)
+[2025-04-16 18:02:53 +0300] [25292] [INFO] Using worker: sync
+[2025-04-16 18:02:53 +0300] [25293] [INFO] Booting worker with pid: 25293
+[2025-04-16 15:03:54,712] INFO storage.views Админ admin запросил общую статистику по пользователям
+[2025-04-16 15:03:57,210] INFO storage.views Админ admin запросил список файлов пользователя admin1
+[2025-04-16 15:03:59,700] INFO storage.views Предпросмотр файла Литобзор Марусина.docx админом admin
+Method Not Allowed: /api/auth/login/
+[2025-04-16 15:14:17,172] WARNING django.request Method Not Allowed: /api/auth/login/
+Method Not Allowed: /api/auth/login/
+[2025-04-16 15:14:18,233] WARNING django.request Method Not Allowed: /api/auth/login/
+[2025-04-16 15:14:19,114] INFO storage.views Админ admin запросил общую статистику по пользователям
+[2025-04-16 15:14:20,858] INFO storage.views Админ admin запросил список файлов пользователя admin1
+[2025-04-16 15:14:21,861] INFO storage.views Предпросмотр файла Литобзор Марусина.docx админом admin
+Method Not Allowed: /api/auth/login/
+[2025-04-16 15:14:31,760] WARNING django.request Method Not Allowed: /api/auth/login/
+Method Not Allowed: /api/auth/login/
+[2025-04-16 15:14:32,987] WARNING django.request Method Not Allowed: /api/auth/login/
+Unauthorized: /api/auth/me/
+[2025-04-16 15:14:32,990] WARNING django.request Unauthorized: /api/auth/me/
