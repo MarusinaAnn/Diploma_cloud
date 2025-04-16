@@ -34,7 +34,7 @@ def get_current_user(request):
     return Response({
         "username": user.username,
         "email": user.email,
-        "is_admin": user.is_superuser  
+        "is_admin": user.is_superuser
     })
 
 import logging
@@ -54,10 +54,13 @@ class FileViewSet(viewsets.ModelViewSet):
         return super().get_permissions()
 
     def get_queryset(self):
-        user = self.request.user
-        if self.request.user.is_superuser:
-            return UserFile.objects.filter(user=self.request.user)
-        return UserFile.objects.filter(user=user).order_by('-upload_time')
+    	user = self.request.user
+    	if user.is_superuser:
+            return UserFile.objects.all().order_by('-upload_time')
+    	return UserFile.objects.filter(user=user).order_by('-upload_time')
+
+
+
 
 
     def get_serializer_class(self):
@@ -112,8 +115,8 @@ class FileViewSet(viewsets.ModelViewSet):
         file = self.get_object()
         serializer = FileRenameSerializer(data=request.data)
         if serializer.is_valid():
-            new_name = serializer.validated_data['new_name'] 
-            original_extension = os.path.splitext(file.display_name)[1]  
+            new_name = serializer.validated_data['new_name']
+            original_extension = os.path.splitext(file.display_name)[1]
             new_name_without_ext = os.path.splitext(new_name)[0]
             safe_new_name = new_name_without_ext + original_extension
 
@@ -150,8 +153,7 @@ class FileViewSet(viewsets.ModelViewSet):
             return response
 
         raise Http404("Файл не найден")
-    
-        
+
     @action(detail=True, methods=['get'])
     def preview(self, request, pk=None):
         file = self.get_object()
@@ -185,8 +187,7 @@ class FileViewSet(viewsets.ModelViewSet):
             return response
 
         raise Http404("Файл не найден")
-    
-    
+
 
     @action(detail=False, methods=['get'], url_path='user/(?P<user_id>[^/.]+)')
     def list_user_files(self, request, user_id=None):
@@ -198,7 +199,7 @@ class FileViewSet(viewsets.ModelViewSet):
         serializer = FileDetailSerializer(files, many=True)
         logger.info(f"Админ {request.user.username} запросил список файлов пользователя {user.username}")
         return Response(serializer.data)
-    
+
     @action(detail=False, methods=['get'], url_path='user/(?P<user_id>[^/.]+)/stats')
     def user_file_stats(self, request, user_id=None):
         if not request.user.is_superuser:
@@ -216,10 +217,15 @@ class FileViewSet(viewsets.ModelViewSet):
             'file_count': file_count,
             'total_size': total_size
         })
-    
+
     @action(detail=True, methods=['get'], url_path='view')
     def view(self, request, pk=None):
         file = get_object_or_404(UserFile, pk=pk)
+
+        if not request.user.is_superuser and file.user != request.user:
+    	    return Response({'detail': 'Доступ запрещён'}, status=403)
+
+
         absolute_path = os.path.join(settings.MEDIA_ROOT, str(file.file_content))
 
         if os.path.exists(absolute_path):
@@ -249,7 +255,7 @@ class FileViewSet(viewsets.ModelViewSet):
             })
         logger.info(f"Админ {request.user.username} запросил общую статистику по пользователям")
         return Response(data)
-    
+
 @api_view(['GET'])
 @permission_classes([permissions.IsAuthenticated])
 def get_user_info(request):

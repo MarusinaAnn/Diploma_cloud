@@ -27,9 +27,11 @@ const formatSize = (size: number): string => {
   return size + " Б";
 };
 
-const formatDate = (dateStr: string | null): string => {
+const formatDate = (dateStr: string | null | undefined): string => {
   if (!dateStr) return "—";
   const date = new Date(dateStr);
+  if (isNaN(date.getTime())) return "Неверная дата";
+  console.log("upload_time:", file.upload_time);
   return date.toLocaleString("ru-RU", {
     day: "2-digit",
     month: "2-digit",
@@ -38,6 +40,7 @@ const formatDate = (dateStr: string | null): string => {
     minute: "2-digit",
   });
 };
+
 
 const previewFile = async (fileId: string, fileName: string) => {
   try {
@@ -106,55 +109,7 @@ const AdminUserFiles = () => {
       {files.length === 0 ? (
         <p>Нет файлов.</p>
       ) : (
-        files.map((file) => (
-          <div
-            key={file.id}
-            style={{
-              backgroundColor: "#fff",
-              borderRadius: "12px",
-              padding: "16px",
-              marginBottom: "20px",
-              boxShadow: "0 4px 10px rgba(0,0,0,0.05)",
-            }}
-          >
-            <p
-              style={{
-                fontWeight: "bold",
-                fontSize: "18px",
-                marginBottom: "8px",
-              }}
-            >
-              {file.display_name}
-            </p>
-            <p>
-              <strong>Комментарий:</strong> {file.comment || "—"}
-            </p>
-            <p>
-              <strong>Размер:</strong> {formatSize(file.file_size)}
-            </p>
-            <p>
-              <strong>Загружен:</strong> {formatDate(file.upload_time)}
-            </p>
-            <p>
-              <strong>Последнее скачивание:</strong>{" "}
-              {formatDate(file.last_downloaded)}
-            </p>
-            <button
-              className="download-btn"
-              onClick={() => downloadFile(file.id, file.display_name)}
-            >
-              Скачать
-            </button>
-            {file.id && (
-              <button
-                className="preview-btn"
-                onClick={() => previewFile(file.id, file.display_name)}
-              >
-                Предпросмотр
-              </button>
-            )}
-          </div>
-        ))
+        files.map((file) => <FileCard key={file.id} file={file} />)
       )}
     </div>
   );

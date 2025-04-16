@@ -27,7 +27,7 @@ class FileUploadSerializer(serializers.ModelSerializer):
 
 
 class FileDetailSerializer(serializers.ModelSerializer):
-    upload_time = serializers.DateTimeField(format=None)
+    upload_time = serializers.DateTimeField()
     last_downloaded = serializers.DateTimeField(format=None, allow_null=True)
 
     class Meta:

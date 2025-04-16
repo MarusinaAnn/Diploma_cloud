@@ -34,12 +34,14 @@ const formatDate = (dateStr: string | null): string => {
 const FileCard: React.FC<FileProps> = ({ file }) => {
   const handleDownload = () => {
     if (file.shared_link) {
-      // Открываем доступную ссылку в новом окне
       window.open(`/api/files/access/${file.shared_link}/`, "_blank");
     } else {
-      // Качаем защищённым методом
       downloadFile(file.id, file.display_name);
     }
+  };
+
+  const handlePreview = () => {
+    window.open(`/api/files/${file.id}/view/`, "_blank");
   };
 
   return (
@@ -65,25 +67,30 @@ const FileCard: React.FC<FileProps> = ({ file }) => {
         <strong>Загружен:</strong> {formatDate(file.upload_time)}
       </p>
       <p>
-        <strong>Последнее скачивание:</strong> {formatDate(file.last_downloaded)}
+        <strong>Последнее скачивание:</strong>{" "}
+        {formatDate(file.last_downloaded)}
       </p>
       <button className="download-btn" onClick={handleDownload}>
         Скачать
       </button>
+      <button className="preview-btn" onClick={handlePreview} style={{ marginLeft: "10px" }}>
+        Предпросмотр
+      </button>
       {file.shared_link && (
-  <p style={{ marginTop: "8px" }}>
-    <strong>Публичная ссылка:</strong>{" "}
-    <a
-      href={`/api/files/access/${file.shared_link}/`}
-      target="_blank"
-      rel="noopener noreferrer"
-    >
-      Открыть
-    </a>
-  </p>
-)}
+        <p style={{ marginTop: "8px" }}>
+          <strong>Публичная ссылка:</strong>{" "}
+          <a
+            href={`/api/files/access/${file.shared_link}/`}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Открыть
+          </a>
+        </p>
+      )}
     </div>
   );
 };
 
 export default FileCard;
+
