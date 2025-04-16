@@ -73,8 +73,17 @@ const AdminUserFiles: React.FC = () => {
       {files.length === 0 ? (
         <p>Нет файлов.</p>
       ) : (
-        files.map((file) => <FileCard key={file.id} file={file} />)
-      )}
+        files.map((file) => (
+          <FileCard 
+            key={file.id} 
+            file={file} 
+            onDelete={() =>
+              setFiles((prevFiles) => prevFiles.filter((f) => f.id !== file.id)
+              )
+            }
+	  />
+       ))
+     )}
     </div>
   );
 };

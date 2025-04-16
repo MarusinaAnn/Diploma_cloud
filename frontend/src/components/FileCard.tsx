@@ -12,6 +12,7 @@ type FileProps = {
     last_downloaded: string | null;
     shared_link?: string;
   };
+  onDelete?: () => void;
 };
 
 const formatSize = (size: number): string => {
@@ -32,7 +33,7 @@ const formatDate = (dateStr: string | null): string => {
   });
 };
 
-const FileCard: React.FC<FileProps> = ({ file }) => {
+const FileCard: React.FC<FileProps> = ({ file, onDelete }) => {
   const previewFile = async (id: string, name: string) => {
     try {
       const res = await fetch(`/api/files/${id}/view/`, {
@@ -44,37 +45,36 @@ const FileCard: React.FC<FileProps> = ({ file }) => {
       const url = URL.createObjectURL(blob);
       window.open(url, "_blank");
     } catch (err) {
-      alert("Ошибка предпросмотра файла");
+      toast.error("Ошибка предпросмотра файла");
       console.error(err);
     }
   };
 
-
-const copyToClipboard = (text: string) => {
-  try {
-    const textarea = document.createElement("textarea");
-    textarea.value = text;
-    textarea.style.position = "fixed";
-    textarea.style.top = "0";
-    textarea.style.left = "0";
-    textarea.style.opacity = "0";
-    document.body.appendChild(textarea);
-    textarea.focus();
-    textarea.select();
-    document.execCommand("copy");
-    document.body.removeChild(textarea);
-    toast.success("Ссылка скопирована в буфер обмена");
-  } catch (err) {
-    console.error("Ошибка копирования:", err);
-    toast.error("Не удалось скопировать ссылку");
-  }
-};
-
+  const copyToClipboard = (text: string) => {
+    try {
+      const textarea = document.createElement("textarea");
+      textarea.value = text;
+      textarea.style.position = "fixed";
+      textarea.style.top = "0";
+      textarea.style.left = "0";
+      textarea.style.opacity = "0";
+      document.body.appendChild(textarea);
+      textarea.focus();
+      textarea.select();
+      document.execCommand("copy");
+      document.body.removeChild(textarea);
+      toast.success("Ссылка скопирована в буфер обмена");
+    } catch (err) {
+      console.error("Ошибка копирования:", err);
+      toast.error("Не удалось скопировать ссылку");
+    }
+  };
 
   const handleDelete = async (id: string) => {
     if (window.confirm("Удалить файл?")) {
       await deleteFile(id);
-      window.location.reload(); // или передай callback из родителя для обновления
+      toast.success("Файл удалён");
+      if (onDelete) onDelete(); // ← вот тут он вызывается, если передан
     }
   };
 
@@ -132,4 +132,3 @@ const copyToClipboard = (text: string) => {
 };
 
 export default FileCard;
-
