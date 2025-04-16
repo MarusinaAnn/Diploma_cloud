@@ -23,7 +23,7 @@ const Register = () => {
     }
 
     try {
-      await axios.post(`auth/register/`, {
+      await axios.post(`api/auth/register/`, {
         username,
         full_name: fullName,
         email,

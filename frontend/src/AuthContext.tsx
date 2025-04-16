@@ -29,7 +29,7 @@ export const AuthProvider = ({ children }: { children: React.ReactNode }) => {
 
   const checkAuth = async () => {
     try {
-      const res = await axios.get("auth/me/", {
+      const res = await axios.get("api/auth/me/", {
         headers: { "Cache-Control": "no-cache" },
       });
       if (res?.data?.username) {

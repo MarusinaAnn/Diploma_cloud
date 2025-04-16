@@ -1,5 +1,5 @@
 import React from "react";
-import { downloadFile } from "../api/files";
+import { deleteFile, downloadFile } from "../api/files";
 
 type FileProps = {
   file: {
@@ -32,16 +32,32 @@ const formatDate = (dateStr: string | null): string => {
 };
 
 const FileCard: React.FC<FileProps> = ({ file }) => {
-  const handleDownload = () => {
-    if (file.shared_link) {
-      window.open(`/api/files/access/${file.shared_link}/`, "_blank");
-    } else {
-      downloadFile(file.id, file.display_name);
+  const previewFile = async (id: string, name: string) => {
+    try {
+      const res = await fetch(`/api/files/${id}/view/`, {
+        headers: {
+          Authorization: `Token ${localStorage.getItem("token")}`,
+        },
+      });
+      const blob = await res.blob();
+      const url = URL.createObjectURL(blob);
+      window.open(url, "_blank");
+    } catch (err) {
+      alert("Ошибка предпросмотра файла");
+      console.error(err);
     }
   };
 
-  const handlePreview = () => {
-    window.open(`/api/files/${file.id}/view/`, "_blank");
+  const copyToClipboard = (text: string) => {
+    navigator.clipboard.writeText(text);
+    alert("Ссылка скопирована в буфер обмена");
+  };
+
+  const handleDelete = async (id: string) => {
+    if (window.confirm("Удалить файл?")) {
+      await deleteFile(id);
+      window.location.reload(); // или передай callback из родителя для обновления
+    }
   };
 
   return (
@@ -54,40 +70,45 @@ const FileCard: React.FC<FileProps> = ({ file }) => {
         boxShadow: "0 4px 10px rgba(0,0,0,0.05)",
       }}
     >
-      <p style={{ fontWeight: "bold", fontSize: "18px", marginBottom: "8px" }}>
-        {file.display_name}
-      </p>
-      <p>
-        <strong>Комментарий:</strong> {file.comment || "—"}
-      </p>
-      <p>
-        <strong>Размер:</strong> {formatSize(file.file_size)}
-      </p>
-      <p>
-        <strong>Загружен:</strong> {formatDate(file.upload_time)}
-      </p>
-      <p>
-        <strong>Последнее скачивание:</strong>{" "}
-        {formatDate(file.last_downloaded)}
-      </p>
-      <button className="download-btn" onClick={handleDownload}>
-        Скачать
-      </button>
-      <button className="preview-btn" onClick={handlePreview} style={{ marginLeft: "10px" }}>
-        Предпросмотр
-      </button>
+      <strong>{file.display_name}</strong> <br />
+      Комментарий: {file.comment || "—"} <br />
+      Размер: {formatSize(file.file_size)} <br />
+      Загружен: {formatDate(file.upload_time)} <br />
+      Последнее скачивание: {formatDate(file.last_downloaded)} <br />
+
       {file.shared_link && (
-        <p style={{ marginTop: "8px" }}>
-          <strong>Публичная ссылка:</strong>{" "}
-          <a
-            href={`/api/files/access/${file.shared_link}/`}
-            target="_blank"
-            rel="noopener noreferrer"
+        <div className="copy-link-block" style={{ marginTop: "10px" }}>
+          <strong style={{ fontSize: "16px", color: "#88ACBC" }}>
+            Публичная ссылка:
+          </strong>{" "}
+          <button
+            className="copy-btn"
+            onClick={() =>
+              copyToClipboard(
+                `${window.location.origin}/api/files/access/${file.shared_link}/`
+              )
+            }
           >
-            Открыть
-          </a>
-        </p>
+            Скопировать ссылку
+          </button>
+        </div>
       )}
+
+      <div className="file-actions" style={{ marginTop: "15px" }}>
+        <button
+          style={{ marginRight: "10px" }}
+          onClick={() => downloadFile(file.id, file.display_name)}
+        >
+          Скачать
+        </button>
+        <button
+          style={{ marginRight: "10px" }}
+          onClick={() => previewFile(file.id, file.display_name)}
+        >
+          Предпросмотр
+        </button>
+        <button onClick={() => handleDelete(file.id)}>Удалить</button>
+      </div>
     </div>
   );
 };
