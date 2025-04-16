@@ -4,7 +4,6 @@
 > Приложение позволяет пользователям загружать, скачивать, переименовывать, удалять файлы и управлять ими через удобный интерфейс.  
 > Включает интерфейс администратора с управлением пользователями и статистикой.
 
-
 ---
 
 ### 🌐 Развёрнутое приложение
@@ -56,7 +55,7 @@
 ### Backend
 
 ```bash
-git clone https://github.com/MarusinaAnn/Diploma/backend.git
+git clone https://github.com/MarusinaAnn/Diploma-cloud.git 
 cd backend
 python -m venv venv
 source venv/bin/activate
@@ -66,18 +65,18 @@ pip install -r requirements.txt
 cp .env.example .env
 
 python manage.py migrate
-python manage.py createsuperuser
+# суперюзер создаётся автоматически через миграцию (admin / admin12345)
 python manage.py runserver
 ```
 
-Пример `.env`:
+`.env.example`:
 
 ```env
-SECRET_KEY=your_secret_key
-DEBUG=True
+SECRET_KEY=ваш_секрет
+DEBUG=False
 DB_NAME=postgres
 DB_USER=postgres
-DB_PASSWORD=yourpassword
+DB_PASSWORD=пароль
 DB_HOST=localhost
 DB_PORT=5432
 ```
@@ -92,31 +91,79 @@ npm install
 npm run build
 ```
 
-`.env` в `frontend/`:
+`.env`:
 
 ```env
-REACT_APP_BACKEND_URL=http://localhost:8000
+REACT_APP_BACKEND_URL=http://194.67.84.156/api
 ```
 
 ---
 
-## 🌍 Продакшн-деплой (например, на Reg.ru)
+## 🌍 Продакшн-деплой на VPS (Reg.ru)
 
-1. Установите Docker + Docker Compose  
-2. Настройте `docker-compose.yml` и `nginx.conf`  
-3. Запуск:
+### Минимальная инструкция
+
+1. Установить `nginx`, `postgresql`, `python3`, `pip`, `venv`, `nodejs`, `npm`
+2. Развернуть фронтенд (`npm run build`) и бэкенд (`migrate`, `createsuperuser`, `collectstatic` если нужно)
+3. Настроить nginx — пример конфига лежит в `/etc/nginx/sites-available/mycloud`:
+
+```nginx
+server {
+    listen 80;
+    server_name 194.67.84.156;
+
+    root /opt/mycloud/frontend/build;
+    index index.html;
+
+    location / {
+        try_files $uri /index.html;
+    }
+
+    location /static/ {
+        alias /opt/mycloud/frontend/build/static/;
+    }
+
+    location /media/ {
+        alias /opt/mycloud/backend/media/;
+    }
+
+    location /api/ {
+        proxy_pass http://127.0.0.1:8000;
+        proxy_set_header Host $host;
+        proxy_set_header X-Real-IP $remote_addr;
+    }
+}
+```
+
+### Настройка systemd-сервиса для Gunicorn
 
 ```bash
-docker-compose up --build -d
+sudo nano /etc/systemd/system/mycloud.service
 ```
 
----
+```ini
+[Unit]
+Description=MyCloud Django App with Gunicorn
+After=network.target
 
-## 🧪 Валидация (на фронте)
+[Service]
+User=root
+Group=www-data
+WorkingDirectory=/opt/mycloud/backend
+ExecStart=/opt/mycloud/backend/venv/bin/gunicorn wsgi:application --bind 127.0.0.1:8000
+Restart=always
 
-- Логин: латиница, от 4 до 20 символов, первый символ — буква  
-- Email: формат email  
-- Пароль: не менее 6 символов, включая заглавную букву, цифру и спецсимвол
+[Install]
+WantedBy=multi-user.target
+```
+
+```bash
+sudo systemctl daemon-reexec
+sudo systemctl daemon-reload
+sudo systemctl start mycloud
+sudo systemctl enable mycloud
+sudo systemctl status mycloud
+```
 
 ---
 
@@ -126,14 +173,17 @@ docker-compose up --build -d
 - [x] Авторизация/регистрация
 - [x] API с правами доступа
 - [x] Публичные ссылки для скачивания
-- [x] Развёрнутое приложение (Docker, nginx)
+- [x] Развёртывание на сервере (без Docker)
+- [x] Суперпользователь в миграции
 - [x] README на русском и английском
 
 ---
 
-## 📄 Лицензия
+## 🧪 Валидация
 
-MIT — свободное использование и доработка.
+- Логин: латиница, от 4 до 20 символов, первый символ — буква  
+- Email: формат email  
+- Пароль: не менее 6 символов, включая заглавную букву, цифру и спецсимвол
 
 ---
 
@@ -183,24 +233,16 @@ Allows users to upload, download, rename, delete and share files through a simpl
 
 ### 📦 Local Setup
 
-#### Backend
-
 ```bash
-git clone https://github.com/MarusinaAnn/Diploma.git
 cd backend
 python -m venv venv
 source venv/bin/activate
 pip install -r requirements.txt
-
-# Configure .env
-cp .env.example .env
-
 python manage.py migrate
-python manage.py createsuperuser
 python manage.py runserver
 ```
 
-#### Frontend
+Frontend:
 
 ```bash
 cd frontend
@@ -211,37 +253,18 @@ npm run build
 `.env`:
 
 ```env
-REACT_APP_BACKEND_URL=http://localhost:8000
+REACT_APP_BACKEND_URL=http://194.67.84.156/api
 ```
 
 ---
 
-### 🌍 Production Deployment (e.g., reg.ru)
+### ✅ Done
 
-```bash
-docker-compose up --build -d
-```
-
-- Includes services for backend, frontend, DB, nginx  
-- Static files served via nginx  
-
----
-
-### 🧪 Validation Rules
-
-- Username: 4–20 latin characters, starts with a letter  
-- Email: valid email format  
-- Password: min 6 chars, 1 uppercase, 1 number, 1 special character  
-
----
-
-### ✅ Ready
-
-- [x] Fully meets the project spec  
-- [x] Admin interface  
-- [x] Single Page App  
-- [x] Public download links  
-- [x] Deployment-ready with Docker  
+- [x] Full REST API with token auth
+- [x] Admin panel with file/user control
+- [x] Public file sharing
+- [x] Deployment on VPS (no Docker)
+- [x] Superuser created via migration (admin / admin12345)
 
 ---
 
