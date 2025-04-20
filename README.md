@@ -125,6 +125,8 @@ server {
     listen 80;
     server_name 194.67.84.156;
 
+    client_max_body_size 300M;
+
     root /opt/mycloud/frontend/build;
     index index.html;
 
@@ -202,88 +204,103 @@ sudo systemctl enable mycloud
 - Пароль: не менее 6 символов, включая заглавную букву, цифру и спецсимвол
 
 ---
-
-## 🇬🇧 English Version
-
-### ☁️ My Cloud — Cloud Storage Web App
-
-Final diploma project for the **"Fullstack Python Developer"** program.  
-Allows users to upload, download, rename, delete and share files through a simple cloud interface.
-
 ---
 
-### 🚀 Features
+## ❓ Подробные ответы на вопросы проверяющего
 
-👤 For users:
-- Registration with validation
-- Login / Logout
-- Upload files with comment
-- Rename, delete, download
-- Public link (accessible without login)
+### 1. Как устанавливались зависимости?
 
-🛠 For admins:
-- User list and deletion
-- Promote/demote admin role
-- View files of any user
-- Per-user and global file stats
-
----
-
-### 🧱 Tech stack
-
-**Backend**:
-- Python 3.10+
-- Django
-- Django REST Framework
-- PostgreSQL
-- Token auth + local file storage
-
-**Frontend**:
-- React 18
-- TypeScript
-- React Router
-- Axios
-- React Toastify
-
----
-
-### 📦 Local Setup
+Окружение ставилось вручную через `apt`, как указано в инструкции выше:
 
 ```bash
-cd backend
-python3 -m venv venv
-source venv/bin/activate
-pip install -r requirements.txt
-python manage.py migrate
-python manage.py runserver
+sudo apt update && sudo apt install python3 python3-pip python3-venv postgresql nginx nodejs npm -y
 ```
 
-Frontend:
+Это базовые инструменты для развёртывания приложения:
+- `python3`, `pip`, `venv` — для Python-бэкенда
+- `postgresql` — база данных
+- `nginx` — веб-сервер
+- `nodejs`, `npm` — для сборки фронтенда
+
+### 2. Почему фронтенд и бэкенд оказались на сервере?
+
+После подключения к VPS:
+- проект был клонирован из репозитория `git clone ... /opt/mycloud`
+- внутри директории `/opt/mycloud` находятся `backend` и `frontend`
+- развертывание происходило вручную по шагам (см. выше)
+
+### 3. Создание суперюзера
+
+Суперпользователь создаётся автоматически при запуске миграций:  
+в `accounts/migrations/0002_create_admin.py` добавлен код для создания пользователя `admin / admin12345`.
+
+```python
+def create_superuser(apps, schema_editor):
+    User = apps.get_model('accounts', 'CustomUser')
+    if not User.objects.filter(username='admin').exists():
+        User.objects.create_superuser(
+            username='admin',
+            email='admin@example.com',
+            password='admin12345',
+            is_admin=True,
+        )
+```
+
+### 4. Конфигурация nginx
+
+Файл размещён в `/etc/nginx/sites-available/mycloud`, активирован через `sites-enabled`.
+
+Дефолтный конфиг `nginx.conf` не используется. Все настройки прописаны в отдельном виртуальном хосте, как положено в продакшне.
 
 ```bash
-cd frontend
-npm install
-npm run build
+sudo ln -s /etc/nginx/sites-available/mycloud /etc/nginx/sites-enabled/
 ```
 
-`.env`:
+### 5. Проксирование gunicorn
 
-```env
-REACT_APP_BACKEND_URL=http://194.67.84.156/api
+Gunicorn запущен с привязкой по `host:port`:
+
 ```
+ExecStart=/opt/mycloud/backend/venv/bin/gunicorn wsgi:application --bind 127.0.0.1:8000
+```
+
+Проверка успешности проксирования выполнена:
+
+```bash
+curl -I http://127.0.0.1:8000
+```
+
+Ответ: `HTTP/1.1 200 OK`  
+Nginx корректно проксирует трафик по адресу `/api/` к Gunicorn.
+
+### 6. Почему client_max_body_size?
+
+Добавлена строка:
+
+```nginx
+client_max_body_size 300M;
+```
+
+Она позволяет загружать крупные файлы. Без неё nginx возвращал ошибку `413 Request Entity Too Large`.
+
+### 7. Статика
+
+```nginx
+location /media/ {
+    alias /opt/mycloud/backend/media/;
+}
+```
+
+Здесь отдаются пользовательские файлы (загруженные через API).
+
+А `location /static/` используется только для фронта, и указывает на `/frontend/build/static/`. Это не имеет отношения к Django `STATIC_ROOT`, который в продакшене не используется, так как всё — SPA.
 
 ---
 
-### ✅ Done
+## 👤 Данные суперпользователя
 
-- [x] Full REST API with token auth
-- [x] Admin panel with file/user control
-- [x] Public file sharing
-- [x] Deployment on VPS (no Docker)
-- [x] Superuser created via migration (admin / admin12345)
+- **Логин:** `admin`
+- **Пароль:** `admin12345`
+- Пользователь создаётся через миграции (вручную не добавляется)
 
 ---
-
-### 📄 License
-
-MIT — free to use and adapt.
