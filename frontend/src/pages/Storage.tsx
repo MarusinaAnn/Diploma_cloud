@@ -55,7 +55,7 @@ const Storage = () => {
       toast.success("Файл успешно загружен!");
       setTimeout(() => setUploadSuccess(false), 3000);
     } catch (err) {
-      toast.error("Ошибка при загрузке файла");
+      toast.error("Ошибка загрузки: ${err?.response?.statusText || err.message}");
     }
   };
 

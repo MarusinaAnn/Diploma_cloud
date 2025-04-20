@@ -694,3 +694,142 @@ Unauthorized: /api/auth/login/
 [2025-04-20 17:05:46,010] WARNING django.request Unauthorized: /api/auth/login/
 Unauthorized: /api/auth/register/
 [2025-04-20 17:06:24,108] WARNING django.request Unauthorized: /api/auth/register/
+Method Not Allowed: /api/auth/login/
+[2025-04-20 17:10:47,182] WARNING django.request Method Not Allowed: /api/auth/login/
+Unauthorized: /api/auth/me/
+[2025-04-20 17:10:47,183] WARNING django.request Unauthorized: /api/auth/me/
+Method Not Allowed: /api/auth/login/
+[2025-04-20 17:17:18,041] WARNING django.request Method Not Allowed: /api/auth/login/
+Unauthorized: /api/auth/me/
+[2025-04-20 17:17:18,055] WARNING django.request Unauthorized: /api/auth/me/
+Unauthorized: /api/auth/login/
+[2025-04-20 17:17:27,696] WARNING django.request Unauthorized: /api/auth/login/
+Unauthorized: /api/auth/login/
+[2025-04-20 17:17:30,869] WARNING django.request Unauthorized: /api/auth/login/
+Method Not Allowed: /api/auth/login/
+[2025-04-20 17:17:37,882] WARNING django.request Method Not Allowed: /api/auth/login/
+Unauthorized: /api/auth/me/
+[2025-04-20 17:17:37,897] WARNING django.request Unauthorized: /api/auth/me/
+Unauthorized: /api/auth/login/
+[2025-04-20 17:18:20,737] WARNING django.request Unauthorized: /api/auth/login/
+Method Not Allowed: /api/auth/login/
+[2025-04-20 17:18:37,209] WARNING django.request Method Not Allowed: /api/auth/login/
+Unauthorized: /api/auth/me/
+[2025-04-20 17:18:37,717] WARNING django.request Unauthorized: /api/auth/me/
+Unauthorized: /api/auth/login/
+[2025-04-20 17:18:50,286] WARNING django.request Unauthorized: /api/auth/login/
+Unauthorized: /api/auth/login/
+[2025-04-20 17:18:56,476] WARNING django.request Unauthorized: /api/auth/login/
+Unauthorized: /api/auth/login/
+[2025-04-20 17:18:56,498] WARNING django.request Unauthorized: /api/auth/login/
+Unauthorized: /api/auth/me/
+[2025-04-20 17:19:44,196] WARNING django.request Unauthorized: /api/auth/me/
+Method Not Allowed: /api/auth/login/
+[2025-04-20 17:19:44,219] WARNING django.request Method Not Allowed: /api/auth/login/
+Method Not Allowed: /api/auth/login/
+[2025-04-20 17:20:41,277] WARNING django.request Method Not Allowed: /api/auth/login/
+Unauthorized: /api/auth/me/
+[2025-04-20 17:20:41,280] WARNING django.request Unauthorized: /api/auth/me/
+[2025-04-20 17:21:27,482] INFO storage.views Админ admin запросил общую статистику по пользователям
+[2025-04-20 17:21:32,468] INFO storage.views Админ admin запросил общую статистику по пользователям
+Unauthorized: /api/auth/login/
+[2025-04-20 17:22:24,096] WARNING django.request Unauthorized: /api/auth/login/
+Unauthorized: /api/auth/login/
+[2025-04-20 17:22:25,957] WARNING django.request Unauthorized: /api/auth/login/
+Method Not Allowed: /api/auth/login/
+[2025-04-20 17:23:57,670] WARNING django.request Method Not Allowed: /api/auth/login/
+Unauthorized: /api/auth/me/
+[2025-04-20 17:23:57,987] WARNING django.request Unauthorized: /api/auth/me/
+Method Not Allowed: /api/auth/login/
+[2025-04-20 17:25:04,035] WARNING django.request Method Not Allowed: /api/auth/login/
+Unauthorized: /api/auth/me/
+[2025-04-20 17:25:04,049] WARNING django.request Unauthorized: /api/auth/me/
+Method Not Allowed: /api/auth/login/
+[2025-04-20 17:42:51,700] WARNING django.request Method Not Allowed: /api/auth/login/
+Unauthorized: /api/auth/me/
+[2025-04-20 17:42:51,702] WARNING django.request Unauthorized: /api/auth/me/
+Method Not Allowed: /api/auth/login/
+[2025-04-20 17:47:05,668] WARNING django.request Method Not Allowed: /api/auth/login/
+Unauthorized: /api/auth/me/
+[2025-04-20 17:47:05,670] WARNING django.request Unauthorized: /api/auth/me/
+Method Not Allowed: /api/auth/login/
+[2025-04-20 17:47:40,164] WARNING django.request Method Not Allowed: /api/auth/login/
+Unauthorized: /api/auth/me/
+[2025-04-20 17:47:40,174] WARNING django.request Unauthorized: /api/auth/me/
+Unauthorized: /api/auth/me/
+[2025-04-20 17:48:06,612] WARNING django.request Unauthorized: /api/auth/me/
+Method Not Allowed: /api/auth/login/
+[2025-04-20 17:48:06,613] WARNING django.request Method Not Allowed: /api/auth/login/
+Method Not Allowed: /api/auth/login/
+[2025-04-20 17:48:30,793] WARNING django.request Method Not Allowed: /api/auth/login/
+Unauthorized: /api/auth/me/
+[2025-04-20 17:48:30,795] WARNING django.request Unauthorized: /api/auth/me/
+Method Not Allowed: /api/auth/login/
+[2025-04-20 17:50:25,709] WARNING django.request Method Not Allowed: /api/auth/login/
+Unauthorized: /api/auth/me/
+[2025-04-20 17:50:25,711] WARNING django.request Unauthorized: /api/auth/me/
+[2025-04-20 17:50:41,406] INFO storage.views Админ admin запросил общую статистику по пользователям
+Method Not Allowed: /api/auth/login/
+[2025-04-20 17:51:17,648] WARNING django.request Method Not Allowed: /api/auth/login/
+Unauthorized: /api/auth/me/
+[2025-04-20 17:51:17,652] WARNING django.request Unauthorized: /api/auth/me/
+[2025-04-20 17:51:36,352] INFO storage.views Админ admin запросил общую статистику по пользователям
+[2025-04-20 17:51:36,887] INFO storage.views Админ admin запросил общую статистику по пользователям
+[2025-04-20 17:51:40,871] INFO storage.views Админ admin запросил список файлов пользователя admin
+[2025-04-20 17:51:41,719] INFO storage.views Предпросмотр файла downloaded_file (1).docx админом admin
+[2025-04-20 17:51:51,013] INFO storage.views Файл downloaded_file (1).docx был открыт по публичной ссылке: 14580ff05829408c9bfc5abfa7e7ef5d
+[2025-04-20 17:51:55,709] INFO storage.views Предпросмотр файла CM.pdf админом admin
+[2025-04-20 17:52:28,001] INFO storage.views Админ admin запросил общую статистику по пользователям
+[2025-04-20 17:52:28,766] INFO storage.views Админ admin запросил общую статистику по пользователям
+[2025-04-20 17:52:45,022] INFO storage.views Админ admin запросил общую статистику по пользователям
+[2025-04-20 17:52:47,571] INFO storage.views Админ admin запросил список файлов пользователя admin1
+[2025-04-20 17:52:52,790] INFO storage.views Пользователь admin удалил файл: Литобзор Марусина.docx
+Unauthorized: /api/auth/me/
+[2025-04-20 17:53:30,996] WARNING django.request Unauthorized: /api/auth/me/
+Method Not Allowed: /api/auth/login/
+[2025-04-20 17:53:30,999] WARNING django.request Method Not Allowed: /api/auth/login/
+Unauthorized: /api/auth/me/
+[2025-04-20 17:53:34,118] WARNING django.request Unauthorized: /api/auth/me/
+Method Not Allowed: /api/auth/login/
+[2025-04-20 17:53:34,119] WARNING django.request Method Not Allowed: /api/auth/login/
+Method Not Allowed: /api/auth/login/
+[2025-04-20 17:54:35,792] WARNING django.request Method Not Allowed: /api/auth/login/
+Unauthorized: /api/auth/me/
+[2025-04-20 17:54:35,892] WARNING django.request Unauthorized: /api/auth/me/
+Unauthorized: /api/auth/login/
+[2025-04-20 17:54:45,955] WARNING django.request Unauthorized: /api/auth/login/
+Unauthorized: /api/auth/login/
+[2025-04-20 17:54:48,512] WARNING django.request Unauthorized: /api/auth/login/
+Method Not Allowed: /api/auth/login/
+[2025-04-20 17:55:42,921] WARNING django.request Method Not Allowed: /api/auth/login/
+[2025-04-20 17:56:24,241] INFO storage.views Пользователь User_mobile1 загрузил файл: Снимок экрана 2024-12-11 222521.png, размер: 13098 байт
+[2025-04-20 17:56:30,935] INFO storage.views Файл Снимок экрана 2024-12-11 222521.png был открыт по публичной ссылке: c7dc98346075483fbe13cb53a9394ef7
+Method Not Allowed: /api/auth/login/
+[2025-04-20 18:09:06,773] WARNING django.request Method Not Allowed: /api/auth/login/
+Unauthorized: /api/auth/me/
+[2025-04-20 18:09:06,830] WARNING django.request Unauthorized: /api/auth/me/
+Unauthorized: /api/auth/login/
+[2025-04-20 18:09:18,293] WARNING django.request Unauthorized: /api/auth/login/
+Method Not Allowed: /api/auth/login/
+[2025-04-20 18:11:14,202] WARNING django.request Method Not Allowed: /api/auth/login/
+Unauthorized: /api/auth/me/
+[2025-04-20 18:11:14,216] WARNING django.request Unauthorized: /api/auth/me/
+Method Not Allowed: /api/auth/login/
+[2025-04-20 18:11:59,846] WARNING django.request Method Not Allowed: /api/auth/login/
+Unauthorized: /api/auth/me/
+[2025-04-20 18:12:00,078] WARNING django.request Unauthorized: /api/auth/me/
+[2025-04-20 18:12:54,272] INFO storage.views Пользователь admin загрузил файл: 20250420_163833.jpg, размер: 3923683 байт
+[2025-04-20 18:12:56,043] INFO storage.views Пользователь admin удалил файл: 20250420_163833.jpg
+[2025-04-20 18:12:59,556] INFO storage.views Файл Снимок экрана 2024-12-11 222521.png был открыт по публичной ссылке: c7dc98346075483fbe13cb53a9394ef7
+Not Found: /
+[2025-04-20 18:13:17,623] WARNING django.request Not Found: /
+[2025-04-20 18:13:17,664] INFO storage.views Пользователь admin загрузил файл: 20250420_163833.jpg, размер: 3923683 байт
+Method Not Allowed: /api/auth/login/
+[2025-04-20 18:13:17,667] WARNING django.request Method Not Allowed: /api/auth/login/
+Not Found: /
+[2025-04-20 18:13:17,685] WARNING django.request Not Found: /
+[2025-04-20 18:13:27,910] INFO storage.views Файл 20250420_163833.jpg был открыт по публичной ссылке: a2ecd94a5c6d490d8b9ef690ea9066ce
+[2025-04-20 18:13:34,533] INFO storage.views Файл 20250420_163833.jpg был открыт по публичной ссылке: a2ecd94a5c6d490d8b9ef690ea9066ce
+[2025-04-20 18:13:56,837] INFO storage.views Пользователь admin загрузил файл: 20250416_022103.jpg, размер: 2973008 байт
+[2025-04-20 18:14:10,821] INFO storage.views Файл 20250416_022103.jpg был открыт по публичной ссылке: 102fc53c3d8146be8ac946fed2525374
+[2025-04-20 18:14:12,174] INFO storage.views Файл 20250416_022103.jpg был открыт по публичной ссылке: 102fc53c3d8146be8ac946fed2525374
