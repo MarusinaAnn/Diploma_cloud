@@ -12,6 +12,7 @@ from rest_framework.permissions import IsAuthenticated
 from rest_framework.response import Response
 from django.utils.decorators import method_decorator
 from django.views.decorators.csrf import csrf_exempt
+from rest_framework.permissions import AllowAny
 
 @api_view(['GET'])
 @permission_classes([permissions.IsAuthenticated])
@@ -39,6 +40,8 @@ class RegisterView(generics.CreateAPIView):
 
 
 class CustomAuthToken(ObtainAuthToken):
+    permission_classes = [AllowAny]
+
     def post(self, request, *args, **kwargs):
         response = super().post(request, *args, **kwargs)
         token = Token.objects.get(key=response.data['token'])

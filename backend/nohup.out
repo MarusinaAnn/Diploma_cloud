@@ -18,3 +18,679 @@ Method Not Allowed: /api/auth/login/
 [2025-04-16 15:14:32,987] WARNING django.request Method Not Allowed: /api/auth/login/
 Unauthorized: /api/auth/me/
 [2025-04-16 15:14:32,990] WARNING django.request Unauthorized: /api/auth/me/
+Unauthorized: /api/auth/me/
+[2025-04-16 15:17:02,491] WARNING django.request Unauthorized: /api/auth/me/
+Method Not Allowed: /api/auth/login/
+[2025-04-16 15:17:02,492] WARNING django.request Method Not Allowed: /api/auth/login/
+Method Not Allowed: /api/auth/login/
+[2025-04-16 15:17:18,889] WARNING django.request Method Not Allowed: /api/auth/login/
+Unauthorized: /api/auth/me/
+[2025-04-16 15:17:19,143] WARNING django.request Unauthorized: /api/auth/me/
+Unauthorized: /api/auth/login/
+[2025-04-16 15:17:33,304] WARNING django.request Unauthorized: /api/auth/login/
+Unauthorized: /api/auth/register/
+[2025-04-16 15:18:22,105] WARNING django.request Unauthorized: /api/auth/register/
+Method Not Allowed: /api/auth/login/
+[2025-04-16 15:18:36,219] WARNING django.request Method Not Allowed: /api/auth/login/
+Method Not Allowed: /api/auth/login/
+[2025-04-16 15:18:39,411] WARNING django.request Method Not Allowed: /api/auth/login/
+[2025-04-16 15:18:42,618] INFO storage.views Админ admin запросил общую статистику по пользователям
+[2025-04-16 15:18:42,941] INFO storage.views Админ admin запросил общую статистику по пользователям
+Method Not Allowed: /api/auth/login/
+[2025-04-16 15:18:46,778] WARNING django.request Method Not Allowed: /api/auth/login/
+Method Not Allowed: /api/auth/login/
+[2025-04-16 15:19:06,273] WARNING django.request Method Not Allowed: /api/auth/login/
+Unauthorized: /api/auth/me/
+[2025-04-16 15:19:06,296] WARNING django.request Unauthorized: /api/auth/me/
+Unauthorized: /api/auth/login/
+[2025-04-16 15:19:26,186] WARNING django.request Unauthorized: /api/auth/login/
+Method Not Allowed: /api/auth/login/
+[2025-04-16 15:19:42,354] WARNING django.request Method Not Allowed: /api/auth/login/
+Unauthorized: /api/auth/me/
+[2025-04-16 15:19:42,606] WARNING django.request Unauthorized: /api/auth/me/
+Unauthorized: /api/auth/login/
+[2025-04-16 15:19:51,881] WARNING django.request Unauthorized: /api/auth/login/
+Method Not Allowed: /api/auth/login/
+[2025-04-16 15:19:57,179] WARNING django.request Method Not Allowed: /api/auth/login/
+Unauthorized: /api/auth/me/
+[2025-04-16 15:19:57,186] WARNING django.request Unauthorized: /api/auth/me/
+Method Not Allowed: /api/auth/login/
+[2025-04-16 15:22:50,573] WARNING django.request Method Not Allowed: /api/auth/login/
+Unauthorized: /api/auth/me/
+[2025-04-16 15:22:50,580] WARNING django.request Unauthorized: /api/auth/me/
+[2025-04-16 15:23:03,760] INFO storage.views Админ admin запросил общую статистику по пользователям
+[2025-04-16 15:23:06,298] INFO storage.views Админ admin запросил список файлов пользователя admin1
+[2025-04-16 15:23:08,107] INFO storage.views Предпросмотр файла Литобзор Марусина.docx админом admin
+Not Found: /
+[2025-04-16 15:57:51,149] WARNING django.request Not Found: /
+Not Found: /
+[2025-04-16 15:58:32,801] WARNING django.request Not Found: /
+Not Found: /
+[2025-04-16 15:59:31,560] WARNING django.request Not Found: /
+Not Found: /
+[2025-04-16 16:00:32,013] WARNING django.request Not Found: /
+Not Found: /
+[2025-04-16 16:01:32,926] WARNING django.request Not Found: /
+Not Found: /
+[2025-04-16 16:02:38,120] WARNING django.request Not Found: /
+Not Found: /
+[2025-04-16 16:04:33,522] WARNING django.request Not Found: /
+Not Found: /
+[2025-04-16 16:06:31,605] WARNING django.request Not Found: /
+Not Found: /
+[2025-04-16 16:07:32,325] WARNING django.request Not Found: /
+Not Found: /
+[2025-04-16 16:08:32,316] WARNING django.request Not Found: /
+Not Found: /
+[2025-04-16 16:09:35,411] WARNING django.request Not Found: /
+Not Found: /
+[2025-04-16 16:11:32,982] WARNING django.request Not Found: /
+Not Found: /
+[2025-04-16 16:12:32,812] WARNING django.request Not Found: /
+Not Found: /
+[2025-04-16 16:13:34,060] WARNING django.request Not Found: /
+Not Found: /
+[2025-04-16 16:14:39,575] WARNING django.request Not Found: /
+Not Found: /
+[2025-04-16 16:15:37,720] WARNING django.request Not Found: /
+Not Found: /
+[2025-04-16 16:17:33,015] WARNING django.request Not Found: /
+Not Found: /
+[2025-04-16 16:18:32,831] WARNING django.request Not Found: /
+Not Found: /
+[2025-04-16 16:20:32,353] WARNING django.request Not Found: /
+Not Found: /
+[2025-04-16 16:21:33,315] WARNING django.request Not Found: /
+Not Found: /
+[2025-04-16 16:23:47,493] WARNING django.request Not Found: /
+Not Found: /
+[2025-04-16 16:24:34,278] WARNING django.request Not Found: /
+Not Found: /
+[2025-04-16 16:25:36,535] WARNING django.request Not Found: /
+Not Found: /
+[2025-04-16 16:27:33,536] WARNING django.request Not Found: /
+Not Found: /
+[2025-04-16 16:28:33,461] WARNING django.request Not Found: /
+Not Found: /
+[2025-04-16 16:30:51,895] WARNING django.request Not Found: /
+Not Found: /
+[2025-04-16 16:32:34,457] WARNING django.request Not Found: /
+Not Found: /
+[2025-04-16 16:33:33,161] WARNING django.request Not Found: /
+Not Found: /
+[2025-04-16 16:34:33,766] WARNING django.request Not Found: /
+Not Found: /
+[2025-04-16 16:35:40,540] WARNING django.request Not Found: /
+Not Found: /
+[2025-04-16 16:37:41,862] WARNING django.request Not Found: /
+Not Found: /
+[2025-04-16 16:39:33,622] WARNING django.request Not Found: /
+Not Found: /
+[2025-04-16 16:40:33,509] WARNING django.request Not Found: /
+Not Found: /
+[2025-04-16 16:41:34,322] WARNING django.request Not Found: /
+Not Found: /
+[2025-04-16 16:43:34,359] WARNING django.request Not Found: /
+Not Found: /
+[2025-04-16 16:44:34,917] WARNING django.request Not Found: /
+Not Found: /
+[2025-04-16 16:46:36,209] WARNING django.request Not Found: /
+Not Found: /
+[2025-04-16 16:48:33,861] WARNING django.request Not Found: /
+Not Found: /
+[2025-04-16 16:49:36,012] WARNING django.request Not Found: /
+Not Found: /
+[2025-04-16 16:50:36,448] WARNING django.request Not Found: /
+Not Found: /
+[2025-04-16 16:52:42,284] WARNING django.request Not Found: /
+Not Found: /
+[2025-04-16 16:55:49,232] WARNING django.request Not Found: /
+Not Found: /
+[2025-04-16 16:57:34,550] WARNING django.request Not Found: /
+Not Found: /
+[2025-04-16 16:58:41,509] WARNING django.request Not Found: /
+Not Found: /
+[2025-04-16 17:00:38,245] WARNING django.request Not Found: /
+Not Found: /
+[2025-04-16 17:02:35,505] WARNING django.request Not Found: /
+Not Found: /
+[2025-04-16 17:03:36,978] WARNING django.request Not Found: /
+[2025-04-16 17:04:25 +0000] [25293] [WARNING] Invalid request from ip=85.142.100.8: Invalid HTTP request line: ''
+Not Found: /
+[2025-04-16 17:05:34,875] WARNING django.request Not Found: /
+Not Found: /
+[2025-04-16 17:06:44,298] WARNING django.request Not Found: /
+Not Found: /
+[2025-04-16 17:08:34,983] WARNING django.request Not Found: /
+[2025-04-16 20:29:48 +0300] [25292] [INFO] Handling signal: hup
+[2025-04-16 20:29:48 +0300] [25292] [INFO] Hang up: Master
+[2025-04-16 20:29:48 +0300] [25292] [ERROR] Worker (pid:25293) was sent SIGHUP!
+[2025-04-16 20:29:48 +0300] [28004] [INFO] Booting worker with pid: 28004
+Not Found: /
+[2025-04-16 18:19:58,000] WARNING django.request Not Found: /
+Method Not Allowed: /api/auth/login/
+[2025-04-16 19:08:31,889] WARNING django.request Method Not Allowed: /api/auth/login/
+Not Found: /
+[2025-04-16 20:32:43,582] WARNING django.request Not Found: /
+Not Found: /favicon.ico
+[2025-04-16 20:32:44,613] WARNING django.request Not Found: /favicon.ico
+Not Found: /
+[2025-04-16 20:53:03,463] WARNING django.request Not Found: /
+Not Found: /
+[2025-04-16 22:05:42,117] WARNING django.request Not Found: /
+Not Found: /
+[2025-04-16 22:05:45,369] WARNING django.request Not Found: /
+[2025-04-16 22:05:45 +0000] [28004] [WARNING] Invalid request from ip=66.132.153.62: Invalid HTTP Version: (2, 0)
+Not Found: /favicon.ico
+[2025-04-16 22:05:48,869] WARNING django.request Not Found: /favicon.ico
+Not Found: /
+[2025-04-16 23:32:06,934] WARNING django.request Not Found: /
+Not Found: /favicon.ico
+[2025-04-16 23:32:07,704] WARNING django.request Not Found: /favicon.ico
+Not Found: /
+[2025-04-17 01:01:12,680] WARNING django.request Not Found: /
+Not Found: /
+[2025-04-17 02:35:00,871] WARNING django.request Not Found: /
+Not Found: /
+[2025-04-17 04:02:05,741] WARNING django.request Not Found: /
+Not Found: /
+[2025-04-17 04:04:13,738] WARNING django.request Not Found: /
+[2025-04-17 04:07:54 +0000] [28004] [WARNING] Invalid request from ip=3.19.188.143: Invalid HTTP request line: 'SSH-2.0-Go'
+Not Found: /
+[2025-04-17 04:32:16,052] WARNING django.request Not Found: /
+Not Found: /favicon.ico
+[2025-04-17 04:32:53,103] WARNING django.request Not Found: /favicon.ico
+Invalid HTTP_HOST header: 'api.ipify.org'. You may need to add 'api.ipify.org' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/opt/mycloud/backend/venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/opt/mycloud/backend/venv/lib/python3.10/site-packages/django/utils/deprecation.py", line 133, in __call__
+    response = self.process_request(request)
+  File "/opt/mycloud/backend/venv/lib/python3.10/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+  File "/opt/mycloud/backend/venv/lib/python3.10/site-packages/django/http/request.py", line 150, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'api.ipify.org'. You may need to add 'api.ipify.org' to ALLOWED_HOSTS.
+[2025-04-17 04:33:15,618] ERROR django.security.DisallowedHost Invalid HTTP_HOST header: 'api.ipify.org'. You may need to add 'api.ipify.org' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/opt/mycloud/backend/venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/opt/mycloud/backend/venv/lib/python3.10/site-packages/django/utils/deprecation.py", line 133, in __call__
+    response = self.process_request(request)
+  File "/opt/mycloud/backend/venv/lib/python3.10/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+  File "/opt/mycloud/backend/venv/lib/python3.10/site-packages/django/http/request.py", line 150, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'api.ipify.org'. You may need to add 'api.ipify.org' to ALLOWED_HOSTS.
+Bad Request: /
+[2025-04-17 04:33:15,641] WARNING django.request Bad Request: /
+Invalid HTTP_HOST header: 'www.shadowserver.org'. You may need to add 'www.shadowserver.org' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/opt/mycloud/backend/venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/opt/mycloud/backend/venv/lib/python3.10/site-packages/django/utils/deprecation.py", line 133, in __call__
+    response = self.process_request(request)
+  File "/opt/mycloud/backend/venv/lib/python3.10/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+  File "/opt/mycloud/backend/venv/lib/python3.10/site-packages/django/http/request.py", line 150, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'www.shadowserver.org'. You may need to add 'www.shadowserver.org' to ALLOWED_HOSTS.
+[2025-04-17 04:33:38,723] ERROR django.security.DisallowedHost Invalid HTTP_HOST header: 'www.shadowserver.org'. You may need to add 'www.shadowserver.org' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/opt/mycloud/backend/venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/opt/mycloud/backend/venv/lib/python3.10/site-packages/django/utils/deprecation.py", line 133, in __call__
+    response = self.process_request(request)
+  File "/opt/mycloud/backend/venv/lib/python3.10/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+  File "/opt/mycloud/backend/venv/lib/python3.10/site-packages/django/http/request.py", line 150, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'www.shadowserver.org'. You may need to add 'www.shadowserver.org' to ALLOWED_HOSTS.
+Bad Request: /443
+[2025-04-17 04:33:38,743] WARNING django.request Bad Request: /443
+Not Found: /api/.env
+[2025-04-17 06:09:41,209] WARNING django.request Not Found: /api/.env
+[2025-04-17 06:40:52 +0000] [28004] [WARNING] Invalid request from ip=152.32.132.203: Invalid HTTP request line: ''
+Not Found: /api/.env
+[2025-04-17 06:54:13,054] WARNING django.request Not Found: /api/.env
+Not Found: /api/.git/config
+[2025-04-17 06:54:14,239] WARNING django.request Not Found: /api/.git/config
+Not Found: /
+[2025-04-17 06:58:19,909] WARNING django.request Not Found: /
+Not Found: /favicon.ico
+[2025-04-17 06:58:20,211] WARNING django.request Not Found: /favicon.ico
+Not Found: /sitemap.xml
+[2025-04-17 06:58:20,507] WARNING django.request Not Found: /sitemap.xml
+Not Found: /robots.txt
+[2025-04-17 06:58:20,510] WARNING django.request Not Found: /robots.txt
+Not Found: /
+[2025-04-17 07:42:42,230] WARNING django.request Not Found: /
+Not Found: /favicon.ico
+[2025-04-17 07:42:43,302] WARNING django.request Not Found: /favicon.ico
+Not Found: /
+[2025-04-17 08:21:28,640] WARNING django.request Not Found: /
+Not Found: /api/.env
+[2025-04-17 10:26:15,642] WARNING django.request Not Found: /api/.env
+Not Found: /api/.git/config
+[2025-04-17 10:26:17,349] WARNING django.request Not Found: /api/.git/config
+Not Found: /
+[2025-04-17 10:37:39,083] WARNING django.request Not Found: /
+Not Found: /login
+[2025-04-17 10:37:39,184] WARNING django.request Not Found: /login
+Not Found: /
+[2025-04-17 12:28:20,435] WARNING django.request Not Found: /
+Not Found: /login
+[2025-04-17 12:28:20,697] WARNING django.request Not Found: /login
+Not Found: /
+[2025-04-17 13:29:33,727] WARNING django.request Not Found: /
+Method Not Allowed: /api/auth/login/
+[2025-04-17 13:55:44,433] WARNING django.request Method Not Allowed: /api/auth/login/
+Unauthorized: /api/auth/me/
+[2025-04-17 13:55:44,484] WARNING django.request Unauthorized: /api/auth/me/
+Not Found: /
+[2025-04-17 14:14:46,317] WARNING django.request Not Found: /
+Not Found: /
+[2025-04-17 14:14:50,952] WARNING django.request Not Found: /
+[2025-04-17 14:14:51 +0000] [28004] [WARNING] Invalid request from ip=167.94.145.109: Invalid HTTP Version: (2, 0)
+Not Found: /favicon.ico
+[2025-04-17 14:14:54,886] WARNING django.request Not Found: /favicon.ico
+Not Found: /
+[2025-04-17 16:00:07,168] WARNING django.request Not Found: /
+[2025-04-17 16:57:08 +0000] [28004] [WARNING] Invalid request from ip=185.7.214.6: Invalid HTTP request line: '\x03\x00\x00/*à\x00\x00\x00\x00\x00Cookie: mstshash=Administr'
+Not Found: /
+[2025-04-17 17:01:06,169] WARNING django.request Not Found: /
+[2025-04-17 20:19:47 +0300] [25292] [CRITICAL] WORKER TIMEOUT (pid:28004)
+[2025-04-17 17:19:47 +0000] [28004] [ERROR] Error handling request (no URI read)
+Traceback (most recent call last):
+  File "/opt/mycloud/backend/venv/lib/python3.10/site-packages/gunicorn/workers/sync.py", line 133, in handle
+    req = next(parser)
+  File "/opt/mycloud/backend/venv/lib/python3.10/site-packages/gunicorn/http/parser.py", line 41, in __next__
+    self.mesg = self.mesg_class(self.cfg, self.unreader, self.source_addr, self.req_count)
+  File "/opt/mycloud/backend/venv/lib/python3.10/site-packages/gunicorn/http/message.py", line 259, in __init__
+    super().__init__(cfg, unreader, peer_addr)
+  File "/opt/mycloud/backend/venv/lib/python3.10/site-packages/gunicorn/http/message.py", line 60, in __init__
+    unused = self.parse(self.unreader)
+  File "/opt/mycloud/backend/venv/lib/python3.10/site-packages/gunicorn/http/message.py", line 274, in parse
+    line, rbuf = self.read_line(unreader, buf, self.limit_request_line)
+  File "/opt/mycloud/backend/venv/lib/python3.10/site-packages/gunicorn/http/message.py", line 326, in read_line
+    self.get_data(unreader, buf)
+  File "/opt/mycloud/backend/venv/lib/python3.10/site-packages/gunicorn/http/message.py", line 262, in get_data
+    data = unreader.read()
+  File "/opt/mycloud/backend/venv/lib/python3.10/site-packages/gunicorn/http/unreader.py", line 36, in read
+    d = self.chunk()
+  File "/opt/mycloud/backend/venv/lib/python3.10/site-packages/gunicorn/http/unreader.py", line 63, in chunk
+    return self.sock.recv(self.mxchunk)
+  File "/opt/mycloud/backend/venv/lib/python3.10/site-packages/gunicorn/workers/base.py", line 204, in handle_abort
+    sys.exit(1)
+SystemExit: 1
+[2025-04-17 17:19:47 +0000] [28004] [INFO] Worker exiting (pid: 28004)
+[2025-04-17 20:19:47 +0300] [56023] [INFO] Booting worker with pid: 56023
+Not Found: /
+[2025-04-17 17:27:42,615] WARNING django.request Not Found: /
+Not Found: /favicon.ico
+[2025-04-17 17:27:43,228] WARNING django.request Not Found: /favicon.ico
+Method Not Allowed: /api/auth/login/
+[2025-04-17 18:11:59,133] WARNING django.request Method Not Allowed: /api/auth/login/
+Unauthorized: /api/auth/me/
+[2025-04-17 18:11:59,135] WARNING django.request Unauthorized: /api/auth/me/
+Method Not Allowed: /api/auth/login/
+[2025-04-17 18:12:07,598] WARNING django.request Method Not Allowed: /api/auth/login/
+Unauthorized: /api/auth/me/
+[2025-04-17 18:12:07,599] WARNING django.request Unauthorized: /api/auth/me/
+Method Not Allowed: /api/auth/login/
+[2025-04-17 18:26:13,520] WARNING django.request Method Not Allowed: /api/auth/login/
+Unauthorized: /api/auth/me/
+[2025-04-17 18:26:13,540] WARNING django.request Unauthorized: /api/auth/me/
+Unauthorized: /api/auth/register/
+[2025-04-17 18:27:48,155] WARNING django.request Unauthorized: /api/auth/register/
+Unauthorized: /api/auth/register/
+[2025-04-17 18:29:31,727] WARNING django.request Unauthorized: /api/auth/register/
+Unauthorized: /api/auth/register/
+[2025-04-17 18:29:52,562] WARNING django.request Unauthorized: /api/auth/register/
+Unauthorized: /api/auth/me/
+[2025-04-17 18:29:53,093] WARNING django.request Unauthorized: /api/auth/me/
+Method Not Allowed: /api/auth/login/
+[2025-04-17 18:29:53,095] WARNING django.request Method Not Allowed: /api/auth/login/
+Unauthorized: /api/auth/login/
+[2025-04-17 18:31:16,650] WARNING django.request Unauthorized: /api/auth/login/
+Not Found: /api/.git/config
+[2025-04-17 20:02:58,142] WARNING django.request Not Found: /api/.git/config
+Not Found: /
+[2025-04-17 20:23:36,507] WARNING django.request Not Found: /
+Not Found: /
+[2025-04-17 21:11:45,570] WARNING django.request Not Found: /
+Method Not Allowed: /api/auth/login/
+[2025-04-17 23:07:11,536] WARNING django.request Method Not Allowed: /api/auth/login/
+Method Not Allowed: /api/auth/login/
+[2025-04-17 23:07:12,803] WARNING django.request Method Not Allowed: /api/auth/login/
+Unauthorized: /api/auth/me/
+[2025-04-17 23:07:12,806] WARNING django.request Unauthorized: /api/auth/me/
+Bad Request: /api/auth/login/
+[2025-04-17 23:07:38,872] WARNING django.request Bad Request: /api/auth/login/
+Bad Request: /api/auth/login/
+[2025-04-17 23:07:43,356] WARNING django.request Bad Request: /api/auth/login/
+Not Found: /
+[2025-04-18 01:40:32,275] WARNING django.request Not Found: /
+Not Found: /favicon.ico
+[2025-04-18 01:40:32,770] WARNING django.request Not Found: /favicon.ico
+Not Found: /
+[2025-04-18 02:17:40,864] WARNING django.request Not Found: /
+Not Found: /
+[2025-04-18 02:41:35,331] WARNING django.request Not Found: /
+Not Found: /
+[2025-04-18 02:42:04,963] WARNING django.request Not Found: /
+Not Found: /favicon.ico
+[2025-04-18 02:43:02,327] WARNING django.request Not Found: /favicon.ico
+Not Found: /
+[2025-04-18 02:43:15,892] WARNING django.request Not Found: /
+Invalid HTTP_HOST header: 'api.ipify.org'. You may need to add 'api.ipify.org' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/opt/mycloud/backend/venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/opt/mycloud/backend/venv/lib/python3.10/site-packages/django/utils/deprecation.py", line 133, in __call__
+    response = self.process_request(request)
+  File "/opt/mycloud/backend/venv/lib/python3.10/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+  File "/opt/mycloud/backend/venv/lib/python3.10/site-packages/django/http/request.py", line 150, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'api.ipify.org'. You may need to add 'api.ipify.org' to ALLOWED_HOSTS.
+[2025-04-18 02:43:23,699] ERROR django.security.DisallowedHost Invalid HTTP_HOST header: 'api.ipify.org'. You may need to add 'api.ipify.org' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/opt/mycloud/backend/venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/opt/mycloud/backend/venv/lib/python3.10/site-packages/django/utils/deprecation.py", line 133, in __call__
+    response = self.process_request(request)
+  File "/opt/mycloud/backend/venv/lib/python3.10/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+  File "/opt/mycloud/backend/venv/lib/python3.10/site-packages/django/http/request.py", line 150, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'api.ipify.org'. You may need to add 'api.ipify.org' to ALLOWED_HOSTS.
+Bad Request: /
+[2025-04-18 02:43:23,716] WARNING django.request Bad Request: /
+Invalid HTTP_HOST header: 'www.shadowserver.org'. You may need to add 'www.shadowserver.org' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/opt/mycloud/backend/venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/opt/mycloud/backend/venv/lib/python3.10/site-packages/django/utils/deprecation.py", line 133, in __call__
+    response = self.process_request(request)
+  File "/opt/mycloud/backend/venv/lib/python3.10/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+  File "/opt/mycloud/backend/venv/lib/python3.10/site-packages/django/http/request.py", line 150, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'www.shadowserver.org'. You may need to add 'www.shadowserver.org' to ALLOWED_HOSTS.
+[2025-04-18 02:43:45,732] ERROR django.security.DisallowedHost Invalid HTTP_HOST header: 'www.shadowserver.org'. You may need to add 'www.shadowserver.org' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/opt/mycloud/backend/venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/opt/mycloud/backend/venv/lib/python3.10/site-packages/django/utils/deprecation.py", line 133, in __call__
+    response = self.process_request(request)
+  File "/opt/mycloud/backend/venv/lib/python3.10/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+  File "/opt/mycloud/backend/venv/lib/python3.10/site-packages/django/http/request.py", line 150, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'www.shadowserver.org'. You may need to add 'www.shadowserver.org' to ALLOWED_HOSTS.
+Bad Request: /443
+[2025-04-18 02:43:45,744] WARNING django.request Bad Request: /443
+[2025-04-18 05:29:17 +0000] [56023] [WARNING] Invalid request from ip=18.223.0.68: Invalid HTTP request line: 'SSH-2.0-Go'
+Invalid HTTP_HOST header: 'zhuzhaza.ru'. You may need to add 'zhuzhaza.ru' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/opt/mycloud/backend/venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/opt/mycloud/backend/venv/lib/python3.10/site-packages/django/utils/deprecation.py", line 133, in __call__
+    response = self.process_request(request)
+  File "/opt/mycloud/backend/venv/lib/python3.10/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+  File "/opt/mycloud/backend/venv/lib/python3.10/site-packages/django/http/request.py", line 150, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'zhuzhaza.ru'. You may need to add 'zhuzhaza.ru' to ALLOWED_HOSTS.
+[2025-04-18 07:21:54,555] ERROR django.security.DisallowedHost Invalid HTTP_HOST header: 'zhuzhaza.ru'. You may need to add 'zhuzhaza.ru' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/opt/mycloud/backend/venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/opt/mycloud/backend/venv/lib/python3.10/site-packages/django/utils/deprecation.py", line 133, in __call__
+    response = self.process_request(request)
+  File "/opt/mycloud/backend/venv/lib/python3.10/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+  File "/opt/mycloud/backend/venv/lib/python3.10/site-packages/django/http/request.py", line 150, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'zhuzhaza.ru'. You may need to add 'zhuzhaza.ru' to ALLOWED_HOSTS.
+Bad Request: /
+[2025-04-18 07:21:54,569] WARNING django.request Bad Request: /
+Not Found: /api/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+[2025-04-18 07:51:06,731] WARNING django.request Not Found: /api/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+Not Found: /
+[2025-04-18 10:54:01,165] WARNING django.request Not Found: /
+Not Found: /
+[2025-04-18 10:54:04,419] WARNING django.request Not Found: /
+[2025-04-18 10:54:04 +0000] [56023] [WARNING] Invalid request from ip=66.132.153.63: Invalid HTTP Version: (2, 0)
+Not Found: /favicon.ico
+[2025-04-18 10:54:07,920] WARNING django.request Not Found: /favicon.ico
+Not Found: /
+[2025-04-18 13:32:05,657] WARNING django.request Not Found: /
+Not Found: /
+[2025-04-18 19:41:39,403] WARNING django.request Not Found: /
+Not Found: /login
+[2025-04-18 19:41:39,662] WARNING django.request Not Found: /login
+Not Found: /
+[2025-04-18 21:24:41,934] WARNING django.request Not Found: /
+Not Found: /
+[2025-04-18 22:36:32,670] WARNING django.request Not Found: /
+Not Found: /
+[2025-04-19 02:35:55,460] WARNING django.request Not Found: /
+Not Found: /
+[2025-04-19 04:44:30,131] WARNING django.request Not Found: /
+Unauthorized: /api/auth/me/
+[2025-04-19 05:12:54,114] WARNING django.request Unauthorized: /api/auth/me/
+Not Found: /
+[2025-04-19 06:57:28,105] WARNING django.request Not Found: /
+[2025-04-19 07:02:21 +0000] [56023] [WARNING] Invalid request from ip=18.223.32.213: Invalid HTTP request line: 'SSH-2.0-Go'
+Not Found: /
+[2025-04-19 07:59:13,213] WARNING django.request Not Found: /
+Not Found: /favicon.ico
+[2025-04-19 07:59:13,834] WARNING django.request Not Found: /favicon.ico
+Not Found: /robots.txt
+[2025-04-19 07:59:14,456] WARNING django.request Not Found: /robots.txt
+Not Found: /sitemap.xml
+[2025-04-19 07:59:15,071] WARNING django.request Not Found: /sitemap.xml
+Not Found: /
+[2025-04-19 07:59:39,142] WARNING django.request Not Found: /
+Not Found: /
+[2025-04-19 08:42:24,730] WARNING django.request Not Found: /
+Not Found: /
+[2025-04-19 08:42:27,984] WARNING django.request Not Found: /
+[2025-04-19 08:42:28 +0000] [56023] [WARNING] Invalid request from ip=66.132.153.61: Invalid HTTP Version: (2, 0)
+Not Found: /favicon.ico
+[2025-04-19 08:42:31,486] WARNING django.request Not Found: /favicon.ico
+Not Found: /
+[2025-04-19 08:51:46,709] WARNING django.request Not Found: /
+Not Found: /
+[2025-04-19 12:19:24,139] WARNING django.request Not Found: /
+Not Found: /favicon.ico
+[2025-04-19 12:19:44,232] WARNING django.request Not Found: /favicon.ico
+Invalid HTTP_HOST header: 'api.ipify.org'. You may need to add 'api.ipify.org' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/opt/mycloud/backend/venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/opt/mycloud/backend/venv/lib/python3.10/site-packages/django/utils/deprecation.py", line 133, in __call__
+    response = self.process_request(request)
+  File "/opt/mycloud/backend/venv/lib/python3.10/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+  File "/opt/mycloud/backend/venv/lib/python3.10/site-packages/django/http/request.py", line 150, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'api.ipify.org'. You may need to add 'api.ipify.org' to ALLOWED_HOSTS.
+[2025-04-19 12:19:47,109] ERROR django.security.DisallowedHost Invalid HTTP_HOST header: 'api.ipify.org'. You may need to add 'api.ipify.org' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/opt/mycloud/backend/venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/opt/mycloud/backend/venv/lib/python3.10/site-packages/django/utils/deprecation.py", line 133, in __call__
+    response = self.process_request(request)
+  File "/opt/mycloud/backend/venv/lib/python3.10/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+  File "/opt/mycloud/backend/venv/lib/python3.10/site-packages/django/http/request.py", line 150, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'api.ipify.org'. You may need to add 'api.ipify.org' to ALLOWED_HOSTS.
+Bad Request: /
+[2025-04-19 12:19:47,123] WARNING django.request Bad Request: /
+Invalid HTTP_HOST header: 'www.shadowserver.org'. You may need to add 'www.shadowserver.org' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/opt/mycloud/backend/venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/opt/mycloud/backend/venv/lib/python3.10/site-packages/django/utils/deprecation.py", line 133, in __call__
+    response = self.process_request(request)
+  File "/opt/mycloud/backend/venv/lib/python3.10/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+  File "/opt/mycloud/backend/venv/lib/python3.10/site-packages/django/http/request.py", line 150, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'www.shadowserver.org'. You may need to add 'www.shadowserver.org' to ALLOWED_HOSTS.
+[2025-04-19 12:19:49,980] ERROR django.security.DisallowedHost Invalid HTTP_HOST header: 'www.shadowserver.org'. You may need to add 'www.shadowserver.org' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/opt/mycloud/backend/venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/opt/mycloud/backend/venv/lib/python3.10/site-packages/django/utils/deprecation.py", line 133, in __call__
+    response = self.process_request(request)
+  File "/opt/mycloud/backend/venv/lib/python3.10/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+  File "/opt/mycloud/backend/venv/lib/python3.10/site-packages/django/http/request.py", line 150, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'www.shadowserver.org'. You may need to add 'www.shadowserver.org' to ALLOWED_HOSTS.
+Bad Request: /443
+[2025-04-19 12:19:49,994] WARNING django.request Bad Request: /443
+Not Found: /
+[2025-04-19 13:36:18,310] WARNING django.request Not Found: /
+Not Found: /
+[2025-04-19 15:03:29,621] WARNING django.request Not Found: /
+Not Found: /
+[2025-04-19 15:25:13,332] WARNING django.request Not Found: /
+Not Found: /api/.env
+[2025-04-19 15:40:49,413] WARNING django.request Not Found: /api/.env
+Not Found: /api/.env
+[2025-04-19 15:40:49,420] WARNING django.request Not Found: /api/.env
+Not Found: /api/credentials
+[2025-04-19 15:40:49,870] WARNING django.request Not Found: /api/credentials
+Not Found: /api/credentials
+[2025-04-19 15:40:49,929] WARNING django.request Not Found: /api/credentials
+Not Found: /api/config.json
+[2025-04-19 15:40:52,911] WARNING django.request Not Found: /api/config.json
+Not Found: /api/v1/.env
+[2025-04-19 15:40:53,021] WARNING django.request Not Found: /api/v1/.env
+Not Found: /api/config.json
+[2025-04-19 15:40:53,472] WARNING django.request Not Found: /api/config.json
+Not Found: /api/v1/.env
+[2025-04-19 15:40:53,587] WARNING django.request Not Found: /api/v1/.env
+Not Found: /
+[2025-04-19 16:56:04,157] WARNING django.request Not Found: /
+Not Found: /login
+[2025-04-19 16:56:04,718] WARNING django.request Not Found: /login
+Not Found: /
+[2025-04-19 17:09:54,402] WARNING django.request Not Found: /
+Not Found: /api/v2/heartbeat
+[2025-04-19 18:46:53,925] WARNING django.request Not Found: /api/v2/heartbeat
+Not Found: /
+[2025-04-19 18:46:54,832] WARNING django.request Not Found: /
+Method Not Allowed: /api/auth/login/
+[2025-04-19 19:49:51,208] WARNING django.request Method Not Allowed: /api/auth/login/
+Unauthorized: /api/auth/me/
+[2025-04-19 19:49:51,291] WARNING django.request Unauthorized: /api/auth/me/
+Not Found: /
+[2025-04-19 22:46:00,874] WARNING django.request Not Found: /
+Not Found: /api/phpinfo.php
+[2025-04-19 23:09:11,515] WARNING django.request Not Found: /api/phpinfo.php
+Not Found: /
+[2025-04-20 02:30:46,029] WARNING django.request Not Found: /
+Not Found: /
+[2025-04-20 04:48:29,863] WARNING django.request Not Found: /
+Not Found: /
+[2025-04-20 09:19:28,166] WARNING django.request Not Found: /
+Not Found: /
+[2025-04-20 10:35:57,266] WARNING django.request Not Found: /
+Not Found: /favicon.ico
+[2025-04-20 10:36:12,565] WARNING django.request Not Found: /favicon.ico
+Invalid HTTP_HOST header: 'api.ipify.org'. You may need to add 'api.ipify.org' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/opt/mycloud/backend/venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/opt/mycloud/backend/venv/lib/python3.10/site-packages/django/utils/deprecation.py", line 133, in __call__
+    response = self.process_request(request)
+  File "/opt/mycloud/backend/venv/lib/python3.10/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+  File "/opt/mycloud/backend/venv/lib/python3.10/site-packages/django/http/request.py", line 150, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'api.ipify.org'. You may need to add 'api.ipify.org' to ALLOWED_HOSTS.
+[2025-04-20 10:36:15,625] ERROR django.security.DisallowedHost Invalid HTTP_HOST header: 'api.ipify.org'. You may need to add 'api.ipify.org' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/opt/mycloud/backend/venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/opt/mycloud/backend/venv/lib/python3.10/site-packages/django/utils/deprecation.py", line 133, in __call__
+    response = self.process_request(request)
+  File "/opt/mycloud/backend/venv/lib/python3.10/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+  File "/opt/mycloud/backend/venv/lib/python3.10/site-packages/django/http/request.py", line 150, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'api.ipify.org'. You may need to add 'api.ipify.org' to ALLOWED_HOSTS.
+Bad Request: /
+[2025-04-20 10:36:15,638] WARNING django.request Bad Request: /
+Invalid HTTP_HOST header: 'www.shadowserver.org'. You may need to add 'www.shadowserver.org' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/opt/mycloud/backend/venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/opt/mycloud/backend/venv/lib/python3.10/site-packages/django/utils/deprecation.py", line 133, in __call__
+    response = self.process_request(request)
+  File "/opt/mycloud/backend/venv/lib/python3.10/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+  File "/opt/mycloud/backend/venv/lib/python3.10/site-packages/django/http/request.py", line 150, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'www.shadowserver.org'. You may need to add 'www.shadowserver.org' to ALLOWED_HOSTS.
+[2025-04-20 10:36:18,155] ERROR django.security.DisallowedHost Invalid HTTP_HOST header: 'www.shadowserver.org'. You may need to add 'www.shadowserver.org' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/opt/mycloud/backend/venv/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/opt/mycloud/backend/venv/lib/python3.10/site-packages/django/utils/deprecation.py", line 133, in __call__
+    response = self.process_request(request)
+  File "/opt/mycloud/backend/venv/lib/python3.10/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+  File "/opt/mycloud/backend/venv/lib/python3.10/site-packages/django/http/request.py", line 150, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: 'www.shadowserver.org'. You may need to add 'www.shadowserver.org' to ALLOWED_HOSTS.
+Bad Request: /443
+[2025-04-20 10:36:18,169] WARNING django.request Bad Request: /443
+Not Found: /.env
+[2025-04-20 11:48:23,090] WARNING django.request Not Found: /.env
+Not Found: /
+[2025-04-20 13:37:14,735] WARNING django.request Not Found: /
+Not Found: /
+[2025-04-20 15:22:48,371] WARNING django.request Not Found: /
+Not Found: /login
+[2025-04-20 15:22:48,457] WARNING django.request Not Found: /login
+Not Found: /
+[2025-04-20 15:50:44,611] WARNING django.request Not Found: /
+Method Not Allowed: /api/auth/login/
+[2025-04-20 16:40:37,040] WARNING django.request Method Not Allowed: /api/auth/login/
+Unauthorized: /api/auth/me/
+[2025-04-20 16:40:37,041] WARNING django.request Unauthorized: /api/auth/me/
+Method Not Allowed: /api/auth/login/
+[2025-04-20 16:40:47,496] WARNING django.request Method Not Allowed: /api/auth/login/
+Unauthorized: /api/auth/me/
+[2025-04-20 16:41:09,794] WARNING django.request Unauthorized: /api/auth/me/
+Method Not Allowed: /api/auth/login/
+[2025-04-20 16:41:09,796] WARNING django.request Method Not Allowed: /api/auth/login/
+Method Not Allowed: /api/auth/login/
+[2025-04-20 16:43:13,557] WARNING django.request Method Not Allowed: /api/auth/login/
+Unauthorized: /api/auth/me/
+[2025-04-20 16:43:13,576] WARNING django.request Unauthorized: /api/auth/me/
+Unauthorized: /api/auth/login/
+[2025-04-20 16:43:50,839] WARNING django.request Unauthorized: /api/auth/login/
+Unauthorized: /api/auth/login/
+[2025-04-20 16:44:03,636] WARNING django.request Unauthorized: /api/auth/login/
+Not Found: /
+[2025-04-20 16:51:26,640] WARNING django.request Not Found: /
+[2025-04-20 16:51:29 +0000] [56023] [WARNING] Invalid request from ip=167.94.138.38: Invalid HTTP Version: (2, 0)
+Not Found: /favicon.ico
+[2025-04-20 16:51:41,441] WARNING django.request Not Found: /favicon.ico
+Method Not Allowed: /api/auth/login/
+[2025-04-20 17:05:33,683] WARNING django.request Method Not Allowed: /api/auth/login/
+Unauthorized: /api/auth/me/
+[2025-04-20 17:05:33,713] WARNING django.request Unauthorized: /api/auth/me/
+Unauthorized: /api/auth/login/
+[2025-04-20 17:05:46,010] WARNING django.request Unauthorized: /api/auth/login/
+Unauthorized: /api/auth/register/
+[2025-04-20 17:06:24,108] WARNING django.request Unauthorized: /api/auth/register/
