@@ -6817,3 +6817,5 @@ Method Not Allowed: /api/auth/login/
 [2025-05-12 19:08:17,851] INFO storage.views Пользователь admin загрузил файл: 20250512_204821.jpg, размер: 3036912 байт
 [2025-05-12 19:08:21,571] INFO storage.views Файл 20250512_204821.jpg был открыт по публичной ссылке: e10c068dfc6b4b72839771ed123c1072
 [2025-05-12 19:08:29,633] INFO storage.views Файл 20250512_204821.jpg был открыт по публичной ссылке: e10c068dfc6b4b72839771ed123c1072
+Not Found: /
+[2025-05-12 19:20:27,670] WARNING django.request Not Found: /
